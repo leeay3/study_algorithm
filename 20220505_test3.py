@@ -1,6 +1,4 @@
-from re import A
-
-
+# 알고리즘 기초 공부 1
 # 세 정수를 입력받아 최댓값 구하기
 
 print("세 정수의 최댓값을 구합니다.")
@@ -8,8 +6,36 @@ a = int(input("정수 a의 값을 입력하세요. : "))
 b = int(input("정수 b의 값을 입력하세요. : "))
 c = int(input("정수 c의 값을 입력하세요. : "))
 
-maximum = a
-if b > maximum: maximum = b
-if c > maximum: maximum = c
+maximum = a  # maximum에 a의 값을 대입
+if b > maximum: maximum = b  # b의 값이 maximum보다 크면, maximum에 b의 값을 대입
+if c > maximum: maximum = c  # c의 값이 maximum보다 크면, maximum에 c의 값을 대입
 
-print(f"최댓값은 {maximum}입니다.")
+print(f"최댓값은 {maximum}입니다.")  # 결과 값
+
+"""
+[ 정리 ]
+한 문장씩 순서대로 처리되는 구조 = 순차 구조
+if와 콜론(:) 사이에 있는 식 = 조건식
+
+조건식으로 평가한 결과에 따라 프로그램의 실행 흐름이 변경되는데 이러한 구조를 순차 구조라고 한다.
+"""
+# --------------------------------------------
+
+
+# 보충문제
+# 이름 출력하기
+
+print("이름을 입력하세요. : ", end = " ")
+name = input()
+print(f"안녕하세요? {name} 님.")
+
+"""
+[ 정리 ]
+input() 함수는 키보드로 문자열을 입력받아 반환한다.
+실행 결과와 같이 input() 함수를 호출하면 입력받은 문자열형(str)의 '입력한 이름'을 얻을 수 있고 그 문자열이 name에 대입된다.
+"""
+
+"""
+int() 함수는 'int(문자열)'과 같이 문자열을 전달받는다.
+비슷한 예로 float() 함수는 'float(문자열)'과 같이 문자열을 전달받고 실행 결과로 실수형을 반환한다.
+"""
